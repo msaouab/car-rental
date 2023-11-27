@@ -1,3 +1,14 @@
+:root {
+
+	/* font-family */
+	--titles-font: "Poppins", sans-serif;
+	--text-font: "Rubik", sans-serif;
+
+	/* colors */
+	--primary-color: #000;
+	--secondary-color: #ff4d30;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;

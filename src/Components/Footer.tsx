@@ -1,4 +1,6 @@
 import { FooterStyled } from "../Styled/FooterStyled";
+import { MdPhoneInTalk } from "react-icons/md";
+import { IoIosMail } from "react-icons/io";
 
 export const Footer = () => {
 	return (
@@ -12,8 +14,13 @@ export const Footer = () => {
 					needs. We have the perfect car to meet your needs.
 				</p>
 				<ul>
-					<li>(123) -456-789</li>
-					<li>carrental@gmail.com</li>
+					<li>
+						<MdPhoneInTalk /> (123) -456-789
+					</li>
+					<li>
+						<IoIosMail />
+						carrental@gmail.com
+					</li>
 				</ul>
 				<p>
 					Design by <a href="">XpeedStudio</a>
