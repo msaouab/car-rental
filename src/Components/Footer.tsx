@@ -1,6 +1,7 @@
 import { FooterStyled } from "../Styled/FooterStyled";
 import { HiOutlineMail } from "react-icons/hi";
 import { TbBrandWhatsapp } from "react-icons/tb";
+import { Button } from "./Button";
 
 export const Footer = () => {
 	return (
@@ -19,8 +20,12 @@ export const Footer = () => {
 				<a href="mailto:carrental@gmail.com" target="_blank">
 					<HiOutlineMail /> <span>carrental@gmail.com</span>
 				</a>
-				<a href="https://xpeedstudio.com/" target="_blank">Design by XpeedStudio</a>
-				<a href="https://github.com/msaouab" target="_blank">Coded by msaouab</a>
+				<a href="https://xpeedstudio.com/" target="_blank">
+					Design by XpeedStudio
+				</a>
+				<a href="https://github.com/msaouab" target="_blank">
+					Coded by msaouab
+				</a>
 			</div>
 			<div className="Company">
 				<h2 className="footerTitle">COMPANY</h2>
@@ -41,9 +46,10 @@ export const Footer = () => {
 				<p>Subscribe your Email address for latest news & updates.</p>
 				<form>
 					<input type="email" placeholder="Enter Email Address " />
-					<button type="submit" value="Submit">
+					{/* <button type="submit" value="Submit">
 						Submit
-					</button>
+					</button> */}
+					<Button type="submit">Submit</Button>
 				</form>
 			</div>
 		</FooterStyled>
