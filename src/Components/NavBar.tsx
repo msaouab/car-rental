@@ -2,7 +2,7 @@ import { NavStyled } from "../Styled/NavStyled";
 import { useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
-import Logo from "/logo.png";
+import Logo from "/images/logo/logo.png";
 import { Button } from "./Button";
 
 export const NavBar = () => {

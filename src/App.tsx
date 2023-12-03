@@ -3,6 +3,7 @@ import { NavBar } from "./Components/NavBar";
 import { Home } from "./Pages/Home";
 import { AppStyled } from "./Styled/AppStyled";
 import { Footer } from "./Components/Footer";
+import { BookCar } from "./Components/BookCar";
 
 function App() {
 	return (
@@ -13,7 +14,10 @@ function App() {
 					<Route path="/" element={<Home />} />
 				</Routes>
 			</Router>
-			<Footer />
+			<BookCar />
+			<div className="footer">
+				<Footer />
+			</div>
 		</AppStyled>
 	);
 }
