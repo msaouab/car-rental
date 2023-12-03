@@ -18,7 +18,6 @@ export const BookCarStyled = styled.div`
 		}
 		& :first-child {
 			color: var(--white-color);
-			border: 1px solid red;
 		}
 		& :last-child {
 			display: flex;
