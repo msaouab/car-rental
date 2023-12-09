@@ -12,18 +12,6 @@ export const PlanSectionStyled = styled.section`
 			display: flex;
 			flex-direction: column;
 			gap: 1rem;
-			& > h3 {
-				font-size: 1.7rem;
-				font-weight: 500;
-				color: var(--primary-color);
-				text-align: center;
-			}
-			& > h2 {
-				font-size: 2.5rem;
-				font-weight: 700;
-				font-family: var(--titles-font);
-				text-align: center;
-			}
 		}
 		& > .planBoxes {
 			display: flex;
@@ -45,11 +33,6 @@ export const PlanSectionStyled = styled.section`
 					font-size: 1.2rem;
 					font-weight: 700;
 					font-family: var(--titles-font);
-				}
-				& > p {
-					font-size: 1.1rem;
-					font-weight: 400;
-					color: var(--gray-color);
 				}
 			}
 		}

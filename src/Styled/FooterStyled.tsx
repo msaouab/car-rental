@@ -22,11 +22,8 @@ export const FooterStyled = styled.footer`
 			}
 		}
 		& > .desctiption {
-			color: #777;
+			color: var(--gray-color);
 			max-width: 90%;
-		}
-		& > p {
-			font-family: var(--text-font);
 		}
 		& > a {
 			display: flex;

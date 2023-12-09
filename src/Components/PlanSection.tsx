@@ -1,4 +1,4 @@
-import { PlanSectionStyled } from "../Styled/PlanSectionStyled";
+import { PlanSectionStyled } from "../Styled/PlanStyled";
 import SelectIcon from "/images/plan/icon1.png";
 import ContactIcon from "/images/plan/icon2.png";
 import DriveIcon from "/images/plan/icon3.png";

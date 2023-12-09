@@ -1,7 +1,7 @@
 import { TbBrandWhatsapp } from "react-icons/tb";
 import { BookCarStyled } from "../Styled/BookCarStyled";
 
-export const BookCar = () => {
+export const BookCarSection = () => {
 	return (
 		<BookCarStyled>
 			<div className="container">
