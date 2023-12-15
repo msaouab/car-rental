@@ -5,7 +5,11 @@ export const TestimonialsCardStyle = styled.section`
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		text-align: center;
-		/* gap: 3rem; */
+		gap: 2rem;
+		& > .subsection {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
 	}
 `;

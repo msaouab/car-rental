@@ -5,8 +5,10 @@ export const TestimonialsCard = () => {
 	return (
 		<TestimonialsCardStyle>
 			<div className="container TestimonialsCardStyle">
-				<h3>Reviewed by People</h3>
-				<h2>Client's Testimonials</h2>
+				<div className="subsection">
+					<h3>Reviewed by People</h3>
+					<h2>Client's Testimonials</h2>
+				</div>
 				<p>
 					Discover the positive impact we've made on the our clients
 					by reading through their testimonials. Our clients have
