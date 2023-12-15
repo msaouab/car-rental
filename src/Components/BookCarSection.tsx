@@ -5,10 +5,10 @@ export const BookCarSection = () => {
 	return (
 		<BookCarStyled>
 			<div className="container">
-				<p>Book a car by getting in touch with us</p>
-				<p>
+				<h2>Book a car by getting in touch with us</h2>
+				<h2>
 					<TbBrandWhatsapp /> (123) 456-7869
-				</p>
+				</h2>
 			</div>
 		</BookCarStyled>
 	);
