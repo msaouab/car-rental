@@ -15,7 +15,7 @@ export const FooterStyled = styled.footer`
 			font-size: 1.4rem;
 			letter-spacing: 1.5px;
 			font-weight: bold;
-			font-family: var(--titles-font);
+			font-family: var(--title-font);
 			span {
 				color: var(--primary-color);
 				font-weight: 300;

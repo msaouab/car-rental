@@ -32,7 +32,7 @@ export const PlanSectionStyled = styled.section`
 				& > h2 {
 					font-size: 1.2rem;
 					font-weight: 700;
-					font-family: var(--titles-font);
+					font-family: var(--title-font);
 				}
 			}
 		}

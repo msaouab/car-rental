@@ -4,13 +4,13 @@ import ronRizzly from "/images/testimonials/pfp2.jpg";
 
 const profile = [
 	{
-		quotes: "We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable.",
+		quotes: '"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable."',
 		img: harryPotter,
 		name: "Harry Potter",
 		city: "Belgrade",
 	},
 	{
-		quotes: "The car was in great condition and made our trip even better. Highly recommend for this car rental website!",
+		quotes: '"The car was in great condition and made our trip even better. Highly recommend for this car rental website!"',
 		img: ronRizzly,
 		name: "Ron Rizzly",
 		city: "Novi Sad",
@@ -21,7 +21,7 @@ export const Cards = () => {
 	return (
 		<CardsStyle>
 			{profile.map((item, index) => (
-				<div key={index} className="card debug">
+				<div key={index} className="card">
 					<p>{item.quotes}</p>
 					<div className="Profile">
 						<div className="imgContainer">

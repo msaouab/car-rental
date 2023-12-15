@@ -10,12 +10,14 @@ export const CardsStyle = styled.div`
 		box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
+		gap: 2rem;
 		padding: 55px;
 		& > p {
 			color: var(--primary-color);
-			font-family: var(--text-font);
+			font-family: var(--title-font);
 			text-align: start;
+			font-size: 1.3rem;
+			font-weight: 500;
 		}
 		& > .Profile {
 			display: flex;
@@ -35,11 +37,14 @@ export const CardsStyle = styled.div`
 					display: flex;
 					flex-direction: column;
 					align-items: start;
+					font-size: 1.2rem;
+					font-weight: bolder;
+					color: var(--primary-color);
+					& > span {
+						font-size: 1rem;
+						font-weight: 400;
+					}
 				}
-			}
-			& > span {
-				display: flex;
-				align-items: center;
 			}
 			& > svg {
 				color: var(--secondary-color);

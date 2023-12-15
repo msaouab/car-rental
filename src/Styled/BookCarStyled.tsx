@@ -11,7 +11,7 @@ export const BookCarStyled = styled.div`
 		align-items: center;
 		text-align: center;
 		gap: 3rem;
-		font-family: var(--titles-font);
+		font-family: var(--title-font);
 		& :first-child {
 			color: var(--white-color);
 		}
