@@ -7,6 +7,8 @@ export const HeaderStyle = styled.header`
 		background-image: url(${HeroMainCar});
 		background-repeat: no-repeat;
 		background-position: right top;
+		height: 100dvh;
+		padding: 1rem 0;
 	}
 	&.Page {
 		background-image: url(${HeroesCar});
@@ -17,7 +19,7 @@ export const HeaderStyle = styled.header`
 			background-color: hsla(0, 0%, 100%, 0.8);
 			height: 26rem;
 			position: relative;
-			padding: 0.5rem 0;
+			padding: 1rem 0;
 
 			& > :last-child {
 			}
