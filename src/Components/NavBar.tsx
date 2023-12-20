@@ -1,9 +1,9 @@
-import { NavStyled } from "../Styled/NavStyled";
 import { useState } from "react";
 import { Sling as Hamburger } from "hamburger-react";
 import { Link } from "react-router-dom";
 import Logo from "/images/logo/logo.png";
 import { Button } from "./Button";
+import { NavStyled } from "../Styled/NavStyled";
 
 export const NavBar = () => {
 	const [isOpen, setOpen] = useState(false);
@@ -12,12 +12,21 @@ export const NavBar = () => {
 		setOpen(!isOpen);
 	};
 
+	const closeTogle = () => {
+		if (isOpen) {
+			setOpen(false);
+		}
+	};
+
 	return (
-		<NavStyled className="navContainer container">
+		<NavStyled className="navContainer container" onClick={closeTogle}>
 			<Link to={"/"} className="logo">
 				<img src={Logo} alt="car rental" />
 			</Link>
-			<div className={isOpen ? "open navbar" : "navbar"}>
+			<div className="hamburger" onClick={handleTogle}>
+				<Hamburger toggled={isOpen} toggle={handleTogle} rounded />
+			</div>
+			<div className={isOpen ? "open" : "full-size"}>
 				<Link to={"/"}>Home</Link>
 				<Link to={"about"}>About</Link>
 				<Link to={"models"}>Vehicle Models</Link>
@@ -28,9 +37,6 @@ export const NavBar = () => {
 			<div className="login">
 				<a href="">Sign In</a>
 				<Button type="submit">Register</Button>
-			</div>
-			<div className="hamburger" onClick={handleTogle}>
-				<Hamburger toggled={isOpen} toggle={handleTogle} rounded />
 			</div>
 		</NavStyled>
 	);

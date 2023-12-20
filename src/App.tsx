@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { NavBar } from "./Components/NavBar";
 import { Home } from "./Pages/Home";
 import { AppStyled } from "./Styled/AppStyled";
 import { Footer } from "./Components/Footer";
 import { About } from "./Pages/About";
 import { BookCarSection } from "./Components/BookCarSection";
 import { Testimonials } from "./Pages/Testimonials";
+import { Header } from "./Components/Header";
 
 function App() {
 	return (
 		<AppStyled>
 			<Router>
-				<NavBar />
+				<Header />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
