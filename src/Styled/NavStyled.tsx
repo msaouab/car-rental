@@ -87,7 +87,7 @@ export const NavStyled = styled.nav`
 			padding: 0.7rem 1rem;
 			font-size: 1rem;
 			font-weight: 500;
-			color: var(--primary-color);
+			color: var(--white-color);
 			text-transform: capitalize;
 			transition: all 0.3s ease-in-out;
 			&:hover {

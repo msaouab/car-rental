@@ -1,25 +1,67 @@
 import styled from "styled-components";
 
 export const HomeHeaderStyled = styled.section`
+	padding: 0;
 	& .container {
+		height: 90dvh;
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
 		& .leftSection {
-			text-align: start;
 			display: flex;
 			flex-direction: column;
+			text-align: start;
 			gap: 1rem;
-			& p {
-				font-size: 1.2rem;
-				font-weight: 500;
+			& h2 {
+				font-size: 2rem;
+				font-weight: 700;
+				font-family: var(--title-font);
+				/* line-height: 0; */
+			}
+			& h4 {
+				font-size: 3.5rem;
+				font-weight: 900;
 				color: var(--primary-color);
+				font-family: var(--title-font);
+				line-height: 1.2;
+				& span {
+					color: var(--secondary-color);
+				}
+			}
+			& .buttons {
+				display: flex;
+				gap: 1rem;
+				& button {
+					padding: 1rem 2rem;
+					font-size: 1.2rem;
+					border-radius: 0.2rem;
+					transition: all 0.3s ease-in-out;
+					color: var(--white-color);
+					&:hover {
+						background-color: var(--white-color);
+						border-color: var(--secondary-color);
+						color: var(--secondary-color);
+					}
+				}
+				& .book-btn {
+					&:hover {
+						border-color: var(--secondary-color);
+						color: var(--secondary-color);
+					}
+				}
+				& .learn-btn {
+					background-color: var(--primary-color);
+					border-color: var(--primary-color);
+					&:hover {
+						border-color: var(--primary-color);
+						color: var(--primary-color);
+					}
+				}
 			}
 		}
 		& .rightSection {
-			width: 60%;
+			width: 100%;
 			& img {
-				width: 100%;
+				max-width: 100%;
 				object-fit: contain;
 			}
 		}

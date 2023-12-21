@@ -5,9 +5,9 @@ import mainCar from "/images/hero/main-car.png";
 export const HomeHeader = () => {
 	return (
 		<HomeHeaderStyled>
-			<div className="container debug">
+			<div className="container">
 				<div className="leftSection">
-					<p>Plan your trip now</p>
+					<h2>Plan your trip now</h2>
 					<h4>
 						Save <span>big</span> with our car rental
 					</h4>
