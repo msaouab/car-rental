@@ -1,6 +1,8 @@
 import { HomeHeaderStyled } from "../Styled/HomeHeaderStyled";
 import { Button } from "./Button";
 import mainCar from "/images/hero/main-car.png";
+import { IoIosArrowForward } from "react-icons/io";
+import { FaRegCircleCheck } from "react-icons/fa6";
 
 export const HomeHeader = () => {
 	return (
@@ -18,9 +20,11 @@ export const HomeHeader = () => {
 					<div className="buttons">
 						<Button className="book-btn" type="submit">
 							Book Now
+							<FaRegCircleCheck />
 						</Button>
 						<Button className="learn-btn" type="submit">
 							Register
+							<IoIosArrowForward />
 						</Button>
 					</div>
 				</div>

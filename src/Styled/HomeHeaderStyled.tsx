@@ -15,7 +15,6 @@ export const HomeHeaderStyled = styled.section`
 				font-size: 2rem;
 				font-weight: 700;
 				font-family: var(--title-font);
-				/* line-height: 0; */
 			}
 			& h4 {
 				font-size: 3.5rem;
@@ -31,11 +30,18 @@ export const HomeHeaderStyled = styled.section`
 				display: flex;
 				gap: 1rem;
 				& button {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 0.5rem;
 					padding: 1rem 2rem;
 					font-size: 1.2rem;
 					border-radius: 0.2rem;
 					transition: all 0.3s ease-in-out;
 					color: var(--white-color);
+					& svg {
+						font-size: 1.2rem;
+					}
 					&:hover {
 						background-color: var(--white-color);
 						border-color: var(--secondary-color);
