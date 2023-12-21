@@ -7,7 +7,7 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 export const HomeHeader = () => {
 	return (
 		<HomeHeaderStyled>
-			<div className="container debug">
+			<div className="container">
 				<div className="leftSection">
 					<h2>Plan your trip now</h2>
 					<h4>
