@@ -7,7 +7,7 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 export const HomeHeader = () => {
 	return (
 		<HomeHeaderStyled>
-			<div className="container">
+			<div className="container debug">
 				<div className="leftSection">
 					<h2>Plan your trip now</h2>
 					<h4>
@@ -18,11 +18,11 @@ export const HomeHeader = () => {
 						unlimited miles, flexible pick-up options and much more.
 					</p>
 					<div className="buttons">
-						<Button className="book-btn" type="submit">
+						<Button className="btn book-btn" type="submit">
 							Book Now
 							<FaRegCircleCheck />
 						</Button>
-						<Button className="learn-btn" type="submit">
+						<Button className="btn learn-btn" type="submit">
 							Register
 							<IoIosArrowForward />
 						</Button>

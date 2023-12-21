@@ -12,11 +12,11 @@ function App() {
 		<AppStyled>
 			<Router>
 				<Header />
-				<Routes>
+				{/* <Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="testimonials" element={<Testimonials />} />
-				</Routes>
+				</Routes> */}
 			</Router>
 			<BookCarSection />
 			<div className="footer">
