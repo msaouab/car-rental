@@ -7,6 +7,7 @@ import { BookCarSection } from "./Components/BookCarSection";
 import { Testimonials } from "./Pages/Testimonials";
 import { Header } from "./Components/Header";
 import { VehicleModels } from "./Pages/VehicleModels";
+import { Team } from "./Pages/Team";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/testimonials" element={<Testimonials />} />
 					<Route path="/models" element={<VehicleModels />} />
+					<Route path="/Team" element={<Team />} />
 					<Route path="*" element={<h1>Not Found</h1>} />
 				</Routes>
 			</Router>

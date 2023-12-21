@@ -8,6 +8,7 @@ export const CardCarStyle = styled.div`
 	align-items: flex-start;
 	text-align: start;
 	gap: 1rem;
+	width: 30%;
 	& .itemContainer {
 		padding: 0 1rem 1rem 1rem;
 		width: 100%;
@@ -63,6 +64,14 @@ export const CardCarStyle = styled.div`
 	}
 	& button {
 		padding: 1rem 2rem;
+		width: 100%;
+	}
+
+	@media (max-width: 1024px) {
+		width: 45%;
+	}
+
+	@media (max-width: 600px) {
 		width: 100%;
 	}
 `;

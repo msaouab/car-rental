@@ -7,3 +7,10 @@ export type VehicleType = {
 	oilType: string;
 	engineType: string;
 };
+
+export type TeamMembersType = {
+	name: string,
+	role: string,
+	image: string,
+	description: string,
+};

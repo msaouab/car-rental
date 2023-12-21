@@ -27,4 +27,29 @@ export const BookCarStyled = styled.div`
 			color: var(--secondary-color);
 		}
 	}
+	@media (max-width: 1300px) {
+		& div {
+			gap: 2rem;
+			& h2 {
+				font-size: 2rem;
+			}
+		}
+	}
+	@media (max-width: 1024px) {
+		padding: 2rem 0;
+		& div {
+			flex-direction: column;
+			gap: 1rem;
+			& h2 {
+				font-size: 2rem;
+			}
+		}
+	}
+	@media (max-width: 500px) {
+		& div {
+			& h2 {
+				font-size: 1.5rem;
+			}
+		}
+	}
 `;
