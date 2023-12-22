@@ -1,21 +1,5 @@
 import { CardsStyle } from "../Styled/CardsStyle";
-import harryPotter from "/images/testimonials/pfp1.jpg";
-import ronRizzly from "/images/testimonials/pfp2.jpg";
-
-const profile = [
-	{
-		quotes: '"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable."',
-		img: harryPotter,
-		name: "Harry Potter",
-		city: "Belgrade",
-	},
-	{
-		quotes: '"The car was in great condition and made our trip even better. Highly recommend for this car rental website!"',
-		img: ronRizzly,
-		name: "Ron Rizzly",
-		city: "Novi Sad",
-	},
-];
+import { profile } from "../_domain/Data";
 
 export const Cards = () => {
 	return (

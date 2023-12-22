@@ -1,25 +1,5 @@
 import { PlanSectionStyled } from "../Styled/PlanStyled";
-import SelectIcon from "/images/plan/icon1.png";
-import ContactIcon from "/images/plan/icon2.png";
-import DriveIcon from "/images/plan/icon3.png";
-
-const planBoxes = [
-	{
-		icon: SelectIcon,
-		title: "Select Car",
-		text: "We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.",
-	},
-	{
-		icon: ContactIcon,
-		title: "Contact Operator",
-		text: "Our knowledgeable and friendly operators are always ready to help with any questions or concerns.",
-	},
-	{
-		icon: DriveIcon,
-		title: "Let's Drive",
-		text: "Whether you're hitting the open road, we've got you covered with our wide range of cars.",
-	},
-];
+import { planBoxes } from "../_domain/Data";
 
 export const PlanSection = () => {
 	return (
@@ -34,7 +14,7 @@ export const PlanSection = () => {
 						<div className="planBox" key={index}>
 							<img src={planBox.icon} alt="" />
 							<h2>{planBox.title}</h2>
-							<p>{planBox.text}</p>
+							<p>{planBox.message}</p>
 						</div>
 					))}
 				</div>
