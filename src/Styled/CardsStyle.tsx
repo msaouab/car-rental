@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CardsStyle = styled.div`
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	gap: 3rem;
 
@@ -48,6 +49,33 @@ export const CardsStyle = styled.div`
 			}
 			& > svg {
 				color: var(--secondary-color);
+			}
+		}
+	}
+	@media (max-width: 600px) {
+		& > .card {
+			width: 90%;
+			padding: 30px;
+		}
+	}
+	@media (max-width: 420px) {
+		& > .card {
+			& > .Profile {
+				& > .imgContainer {
+					width: 100%;
+					& > img {
+						max-width: 50px;
+					}
+					& > p {
+						text-align: start;
+						align-items: start;
+						width: 100%;
+						font-size: 1rem;
+					}
+				}
+				& > svg {
+					display: none;
+				}
 			}
 		}
 	}

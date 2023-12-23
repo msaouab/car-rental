@@ -91,7 +91,7 @@ export const HomeHeaderStyled = styled.section`
 				}
 			}
 			& .rightSection {
-				width: auto;
+				display: none;
 			}
 		}
 	}
@@ -130,9 +130,6 @@ export const HomeHeaderStyled = styled.section`
 						justify-content: center;
 					}
 				}
-			}
-			& .rightSection {
-				display: none;
 			}
 		}
 	}
