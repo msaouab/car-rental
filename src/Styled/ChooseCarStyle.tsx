@@ -4,11 +4,12 @@ import BookBg from "/images/book-car/book-bg.png";
 export const ChooseCarStyle = styled.section`
 	& .container {
 		background-image: url(${BookBg});
+		box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
 		display: flex;
 		flex-direction: column;
 		text-align: start;
 		gap: 2rem;
-		padding: 40px 45px;
+		padding: 40px 45px 80px 45px;
 
 		& > .bookCarTitle {
 			font-size: 1.5rem;
@@ -45,22 +46,16 @@ export const ChooseCarStyle = styled.section`
 				}
 				& > select,
 				input {
-					padding: 0.7rem 1rem;
+					padding: 0.9rem 1rem;
 					color: #ababab;
 					width: 100%;
 					border: 1px solid #ccd7e6;
 					outline: none;
 					font-size: 0.9rem;
 				}
-				& > select {
-					& > option {
-					}
-				}
-				& > input {
-				}
 				& > button {
 					width: 100%;
-					padding: 0.7rem 1rem;
+					padding: 0.9rem 1rem;
 					margin-top: 1.8rem;
 				}
 			}
