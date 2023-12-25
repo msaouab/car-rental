@@ -2,10 +2,11 @@ import { AiTwotoneCar } from "react-icons/ai";
 import { ChooseCarStyle } from "../Styled/ChooseCarStyle";
 import { Button } from "./Button";
 import { FaLocationDot } from "react-icons/fa6";
-import { IoCalendarOutline } from "react-icons/io5";
+import { IoCalendarOutline, IoClose } from "react-icons/io5";
 import { Cars, PickUp } from "../_domain/Data";
 import { useState } from "react";
 import { ChangeEvent } from "react";
+import { BookDialog } from "./BookDialog";
 
 export const ChooseCar = () => {
 	const currentDate = new Date().toISOString().split("T")[0];
@@ -14,6 +15,7 @@ export const ChooseCar = () => {
 	const [pickUp, setPickUp] = useState("default");
 	const [dropOf, setDropOf] = useState("default");
 	const [openDialog, setOpenDialog] = useState(false);
+	const [showEmptyField, setShowEmptyField] = useState(false);
 
 	const handleStartDateChange = (e: ChangeEvent<HTMLInputElement>) => {
 		setStartDate(e.target.value);
@@ -49,19 +51,21 @@ export const ChooseCar = () => {
 			dropOf === "default" ||
 			startDate === ""
 		) {
-			setOpenDialog(true);
-		} else setOpenDialog(false);
-
-		console.log("openDialog:", openDialog);
+			setOpenDialog(false);
+			setShowEmptyField(true);
+		} else setOpenDialog(true);
 	};
 
 	return (
 		<ChooseCarStyle>
 			<div className="container">
 				<h1 className="bookCarTitle">Book a car</h1>
-				{openDialog && (
-					<div className="dialog">
+				{!openDialog && showEmptyField && (
+					<div className="emptyField">
 						<p>Please fill all the fields</p>
+						<span>
+							<IoClose />
+						</span>
 					</div>
 				)}
 				<article className="">
@@ -149,6 +153,7 @@ export const ChooseCar = () => {
 					<div className="selectWrapper search">
 						<Button onClick={handleSearch}>Search</Button>
 					</div>
+					{openDialog && <BookDialog OpenDialog={openDialog} />}
 				</article>
 			</div>
 		</ChooseCarStyle>

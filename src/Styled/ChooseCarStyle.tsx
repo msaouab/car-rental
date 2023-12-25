@@ -18,6 +18,26 @@ export const ChooseCarStyle = styled.section`
 			font-family: var(--title-font);
 		}
 
+		& > .emptyField {
+			width: 100%;
+			padding: 0.5rem 1rem;
+			border-radius: 5px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #f8d7da;
+			& > p {
+				color: #721c24;
+			}
+			& > span {
+				cursor: pointer;
+				& > svg {
+					color: #721c24;
+					font-size: 1.5rem;
+				}
+			}
+		}
+
 		& > article {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
