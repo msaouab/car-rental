@@ -1,7 +1,6 @@
 import { FaqStyled } from "../Styled/FaqStyled";
-import { Accordiondata } from "../_domain/Data";
+// import { Accordiondata } from "../_domain/Data";
 import FaqCar from "/images/faq/car.png";
-import { Accordion, AccordionTab } from "primereact/accordion";
 
 export const FaqSection = () => {
 	return (
@@ -17,7 +16,7 @@ export const FaqSection = () => {
 						Inquiries.
 					</p>
 				</div>
-				<div className="faqcard">
+				{/* <div className="faqcard">
 					<Accordion activeIndex={0}>
 						{Accordiondata.map((card, index) => (
 							<AccordionTab header={card.question} key={index}>
@@ -25,7 +24,7 @@ export const FaqSection = () => {
 							</AccordionTab>
 						))}
 					</Accordion>
-				</div>
+				</div> */}
 			</div>
 		</FaqStyled>
 	);
