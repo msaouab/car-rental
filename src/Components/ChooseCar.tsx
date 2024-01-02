@@ -70,11 +70,15 @@ export const ChooseCar = () => {
 				)}
 				<article className="">
 					<div className="selectWrapper select-car">
-						<label htmlFor="">
+						<label htmlFor="carType" id="selectCar">
 							<AiTwotoneCar />
 							Select Your Car Type <span>*</span>
 						</label>
-						<select name="" id="" onChange={handleCarTypeChange}>
+						<select
+							name="carType"
+							id="carType"
+							onChange={handleCarTypeChange}
+						>
 							<option value="default">
 								Select your car type
 							</option>
@@ -86,13 +90,13 @@ export const ChooseCar = () => {
 						</select>
 					</div>
 					<div className="selectWrapper pick-up">
-						<label htmlFor="">
+						<label htmlFor="pickUpType" id="PickUpCar">
 							<FaLocationDot />
 							Pick-up <span>*</span>
 						</label>
 						<select
-							name=""
-							id=""
+							name="pickUpType"
+							id="pickUpType"
 							onChange={handlePickUpLocationChange}
 						>
 							<option value="default">
@@ -106,13 +110,13 @@ export const ChooseCar = () => {
 						</select>
 					</div>
 					<div className="selectWrapper drop-of">
-						<label htmlFor="">
+						<label htmlFor="drop-Off" id="dropOfLocation">
 							<FaLocationDot />
 							Drop-of <span>*</span>
 						</label>
 						<select
-							name=""
-							id=""
+							name="drop-Off"
+							id="drop-Off"
 							onChange={handleDropOffLocationChange}
 						>
 							<option value="default">
@@ -126,7 +130,7 @@ export const ChooseCar = () => {
 						</select>
 					</div>
 					<div className="selectWrapper pick-up-date">
-						<label htmlFor="">
+						<label htmlFor="start-date" id="PickUp-Date">
 							<IoCalendarOutline />
 							Pick-up <span>*</span>
 						</label>
@@ -139,7 +143,7 @@ export const ChooseCar = () => {
 						/>
 					</div>
 					<div className="selectWrapper drop-of-date">
-						<label htmlFor="">
+						<label htmlFor="end-date" id="dropOfDate">
 							<IoCalendarOutline />
 							Drop-of <span>*</span>
 						</label>

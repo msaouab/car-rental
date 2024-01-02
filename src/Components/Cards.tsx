@@ -1,12 +1,11 @@
 import { CardsStyle } from "../Styled/CardsStyle";
-import { profile } from "../_domain/Data";
-// import QuotesIcon from "../assets/svg/QuotesIcon.svg";
+import { Quotes } from "../_domain/Data";
 
 import { IconQuote } from "@tabler/icons-react";
 export const Cards = () => {
 	return (
 		<CardsStyle>
-			{profile.map((item, index) => (
+			{Quotes.map((item, index) => (
 				<div key={index} className="card">
 					<p>{item.quotes}</p>
 					<div className="Profile">

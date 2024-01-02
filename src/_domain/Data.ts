@@ -2,7 +2,7 @@ import {
 	AccordionType,
 	CarsType,
 	PlanBoxType,
-	ProfileType,
+	ProfileType as QuotesType,
 } from "./interfaces";
 import harryPotter from "/images/testimonials/pfp1.jpg";
 import ronRizzly from "/images/testimonials/pfp2.jpg";
@@ -17,11 +17,17 @@ import member4 from "/images/team/4.png";
 import member5 from "/images/team/5.png";
 import member6 from "/images/team/6.png";
 import CarImg1 from "/images/cars-big/audi-box.png";
+import CarPng1 from "/images/cars-big/audia1.jpg";
 import CarImg2 from "/images/cars-big/golf6-box.png";
+import CarPng2 from "/images/cars-big/golf6.jpg";
 import CarImg3 from "/images/cars-big/toyota-box.png";
+import CarPng3 from "/images/cars-big/toyotacamry.jpg";
 import CarImg4 from "/images/cars-big/bmw-box.png";
+import CarPng4 from "/images/cars-big/bmw320.jpg";
 import CarImg5 from "/images/cars-big/benz-box.png";
+import CarPng5 from "/images/cars-big/benz.jpg";
 import CarImg6 from "/images/cars-big/passat-box.png";
+import CarPng6 from "/images/cars-big/passatcc.jpg";
 import { VehicleType } from "../_domain/interfaces";
 
 export const Cars: CarsType[] = [
@@ -63,7 +69,7 @@ export const PickUp: CarsType[] = [
 	},
 ];
 
-export const profile: ProfileType[] = [
+export const Quotes: QuotesType[] = [
 	{
 		quotes: '"We rented a car from this website and had an amazing experience! The booking was easy and the rental rates were very affordable."',
 		img: harryPotter,
@@ -162,56 +168,86 @@ export const TeamMembersData: TeamMembersType[] = [
 export const VehicleData: VehicleType[] = [
 	{
 		id: 1,
-		name: "Audi A1",
+		name: "Audi A1 S-Line",
 		image: CarImg1,
+		image2: CarPng1,
 		price: 45,
-		brand: "Audi",
-		oilType: "Diesel",
-		engineType: "Manual",
+		model: "Audi",
+		mark: "A1",
+		year: 2012,
+		doors: 4,
+		ac: true,
+		transmission: "Manual",
+		fuel: "Diesel",
 	},
 	{
 		id: 2,
-		name: "Golf 6",
+		name: "VW Golf 6",
 		image: CarImg2,
+		image2: CarPng2,
 		price: 37,
-		brand: "VW",
-		oilType: "Diesel",
-		engineType: "Manual",
+		model: "VW",
+		mark: "Golf",
+		year: 2008,
+		doors: 4,
+		ac: true,
+		transmission: "Manual",
+		fuel: "Diesel",
 	},
 	{
 		id: 3,
 		name: "Toyota Camry",
 		image: CarImg3,
+		image2: CarPng3,
 		price: 30,
-		brand: "Toyota",
-		oilType: "Diesel",
-		engineType: "Manual",
+		model: "Toyota",
+		mark: "Camry",
+		year: 2010,
+		doors: 4,
+		ac: true,
+		transmission: "Manual",
+		fuel: "Hybrid",
 	},
 	{
 		id: 4,
 		name: "BMW 320 ModernLine",
 		image: CarImg4,
+		image2: CarPng4,
 		price: 35,
-		brand: "BMW",
-		oilType: "Diesel",
-		engineType: "Manual",
+		model: "BMW",
+		mark: "320",
+		year: 2011,
+		doors: 4,
+		ac: true,
+		transmission: "Automatic",
+		fuel: "Diesel",
 	},
 	{
 		id: 5,
 		name: "Mercedes Benz GLK",
 		image: CarImg5,
+		image2: CarPng5,
 		price: 50,
-		brand: "Mercedes",
-		oilType: "Diesel",
-		engineType: "Manual",
+		model: "Mercedes",
+		mark: "GLK",
+		year: 2013,
+		doors: 4,
+		ac: true,
+		transmission: "Automatic",
+		fuel: "Diesel",
 	},
 	{
 		id: 6,
 		name: "VW Passat CC",
 		image: CarImg6,
+		image2: CarPng6,
 		price: 25,
-		brand: "VW",
-		oilType: "Diesel",
-		engineType: "Manual",
+		model: "VW",
+		mark: "Passat",
+		year: 2009,
+		doors: 4,
+		ac: true,
+		transmission: "Manual",
+		fuel: "Diesel",
 	},
 ];

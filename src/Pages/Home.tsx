@@ -1,4 +1,5 @@
 import { ChooseCar } from "../Components/ChooseCar";
+import { DiscoverCars } from "../Components/DiscoverCars";
 import { PlanSection } from "../Components/PlanSection";
 import { TestimonialsCard } from "../Components/TestimonialsCard";
 import { HomeStyled } from "../Styled/HomeStyled";
@@ -8,6 +9,7 @@ export const Home = () => {
 		<HomeStyled>
 			<ChooseCar />
 			<PlanSection />
+			<DiscoverCars />
 			<TestimonialsCard />
 			{/* <FaqSection /> */}
 		</HomeStyled>

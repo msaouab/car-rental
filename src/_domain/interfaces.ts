@@ -2,10 +2,15 @@ export type VehicleType = {
 	id: number;
 	name: string;
 	image: string;
+	image2: string;
 	price: number;
-	brand: string;
-	oilType: string;
-	engineType: string;
+	model: string;
+	mark: string;
+	year: number;
+	doors: number;
+	ac: boolean;
+	transmission: string;
+	fuel: string;
 };
 
 export type TeamMembersType = {
@@ -35,4 +40,11 @@ export type PlanBoxType = {
 	icon: string;
 	title: string;
 	message: string;
+};
+
+export type KpisCarProps = {
+	name: string;
+	key: number;
+	isActive: boolean;
+	onClick: () => void;
 };

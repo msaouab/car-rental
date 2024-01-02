@@ -45,10 +45,7 @@ export const Footer = () => {
 				<h2 className="footerTitle">SUBSCRIPTION</h2>
 				<p>Subscribe your Email address for latest news & updates.</p>
 				<form>
-					<input type="email" placeholder="Enter Email Address " />
-					{/* <button type="submit" value="Submit">
-						Submit
-					</button> */}
+					<input type="email" placeholder="Enter Email Address " id="emailID" />
 					<Button type="submit">Submit</Button>
 				</form>
 			</div>

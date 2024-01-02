@@ -5,7 +5,14 @@ import { VehicleType } from "../_domain/interfaces";
 import { Button } from "./Button";
 
 export const CarCards = (props: VehicleType) => {
-	const { name, image, price, brand, oilType, engineType } = props;
+	const {
+		name,
+		image,
+		price,
+		model,
+		transmission,
+		fuel,
+	} = props;
 	const renderStars = () => {
 		const stars = [];
 		for (let i = 0; i < 5; i++) {
@@ -16,7 +23,7 @@ export const CarCards = (props: VehicleType) => {
 	return (
 		<CardCarStyle>
 			<div className="imgContainer">
-				<img src={image} alt={name + brand} />
+				<img src={image} alt={name} />
 			</div>
 			<div className="nameContainer itemContainer">
 				<h1>
@@ -30,7 +37,7 @@ export const CarCards = (props: VehicleType) => {
 			</div>
 			<div className="brandContainer itemContainer">
 				<p>
-					<AiTwotoneCar /> {brand}
+					<AiTwotoneCar /> {model}
 				</p>
 				<p>
 					4/5 <AiTwotoneCar />
@@ -39,10 +46,10 @@ export const CarCards = (props: VehicleType) => {
 			<div className="typeContainer itemContainer">
 				<p>
 					<AiTwotoneCar />
-					{oilType}
+					{fuel}
 				</p>
 				<p>
-					{engineType}
+					{transmission}
 					<AiTwotoneCar />
 				</p>
 			</div>

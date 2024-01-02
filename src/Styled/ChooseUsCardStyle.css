@@ -1,0 +1,115 @@
+.kpisArticle {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: #fff;
+}
+
+.kpis {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	min-width: 18rem;
+}
+
+.kpisView {
+	display: flex;
+
+	&>img {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+.kpisInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	text-align: center;
+	min-width: 18rem;
+}
+
+.table {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	grid-template-rows: auto;
+	border-bottom: 2px solid #706f7b;
+	border-left: 2px solid #706f7b;
+	border-right: 2px solid #706f7b;
+	padding: 0.5rem;
+
+	&>.Vline {
+		border: 1px solid #706f7b;
+	}
+}
+
+.headTable {
+	align-items: center;
+	background-color: #ff4d30;
+	display: flex;
+	gap: 1.5rem;
+	padding: 0.3rem 1.9rem;
+	white-space: wrap;
+	width: 100%;
+
+	&>p {
+		font-size: 1.4rem;
+		color: #fff;
+		font-weight: 700;
+	}
+}
+
+.titleType,
+.titleValue {
+	color: var(--primary-color);
+	font-size: .9rem;
+}
+
+.btnReserveNow:last-child {
+	margin-top: 1rem;
+	padding: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+	.kpisArticle {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.kpis {
+		min-width: 100%;
+	}
+
+	.kpisView {
+		width: 50%;
+	}
+
+	.kpisInfo {
+		min-width: 40%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.kpisArticle {
+		flex-direction: column;
+		padding: 0 10px !important;
+	}
+
+	.kpis {
+		min-width: auto;
+		order: 1;
+	}
+
+	.kpisView {
+		order: 2;
+		width: 100%;
+	}
+
+	.kpisInfo {
+		min-width: auto;
+		order: 3;
+	}
+}
