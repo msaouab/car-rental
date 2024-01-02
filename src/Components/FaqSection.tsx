@@ -1,11 +1,25 @@
+import {
+	Accordion,
+	AccordionDetails,
+	AccordionSummary,
+	Typography,
+} from "@mui/material";
 import { FaqStyled } from "../Styled/FaqStyled";
-// import { Accordiondata } from "../_domain/Data";
-import FaqCar from "/images/faq/car.png";
+import { IoIosArrowDown } from "react-icons/io";
+import { useState } from "react";
+import { Accordiondata } from "../_domain/Data";
 
 export const FaqSection = () => {
+	const [expanded, setExpanded] = useState<string | false>("panel1");
+
+	const handleChange =
+		(panel: string) =>
+		(_event: React.SyntheticEvent, isExpanded: boolean) => {
+			setExpanded(isExpanded ? panel : false);
+		};
+
 	return (
 		<FaqStyled className="">
-			<img src={FaqCar} alt="faq car" />
 			<div className="container faqContent">
 				<div className="faqTitles">
 					<h3>FAQ</h3>
@@ -16,15 +30,25 @@ export const FaqSection = () => {
 						Inquiries.
 					</p>
 				</div>
-				{/* <div className="faqcard">
-					<Accordion activeIndex={0}>
-						{Accordiondata.map((card, index) => (
-							<AccordionTab header={card.question} key={index}>
-								<p className={`m-${index}`}>{card.answer}</p>
-							</AccordionTab>
-						))}
-					</Accordion>
-				</div> */}
+				<div className="faqcard">
+					{Accordiondata.map((card, index) => (
+						<Accordion
+							expanded={expanded === `panel${index + 1}`}
+							onChange={handleChange(`panel${index + 1}`)}
+						>
+							<AccordionSummary
+								expandIcon={<IoIosArrowDown />}
+								aria-controls="panel1bh-content"
+								id="panel1bh-header"
+							>
+								<Typography>{card.question}</Typography>
+							</AccordionSummary>
+							<AccordionDetails>
+								<Typography>{card.answer}</Typography>
+							</AccordionDetails>
+						</Accordion>
+					))}
+				</div>
 			</div>
 		</FaqStyled>
 	);
